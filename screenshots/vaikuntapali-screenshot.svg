@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f9f0d8" />
+      <stop offset="60%" stop-color="#e6d0a0" />
+      <stop offset="100%" stop-color="#d1b17a" />
+    </linearGradient>
+    <linearGradient id="board" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff3d5" />
+      <stop offset="100%" stop-color="#e6c98c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <text x="60" y="70" font-family="Prata, serif" font-size="40" fill="#1a120c">Vaikuntapali</text>
+  <text x="60" y="110" font-family="Alegreya, serif" font-size="18" fill="#5b4128">Classic Indian Snakes and Ladders</text>
+
+  <rect x="60" y="140" width="620" height="520" rx="24" fill="url(#board)" stroke="#5b4128" stroke-width="2" />
+  <rect x="90" y="170" width="560" height="460" rx="16" fill="#fdf2d6" stroke="#8c6a3f" stroke-width="2" />
+
+  <g stroke="#c4a377" stroke-width="1">
+    <line x1="146" y1="170" x2="146" y2="630" />
+    <line x1="202" y1="170" x2="202" y2="630" />
+    <line x1="258" y1="170" x2="258" y2="630" />
+    <line x1="314" y1="170" x2="314" y2="630" />
+    <line x1="370" y1="170" x2="370" y2="630" />
+    <line x1="426" y1="170" x2="426" y2="630" />
+    <line x1="482" y1="170" x2="482" y2="630" />
+    <line x1="538" y1="170" x2="538" y2="630" />
+    <line x1="594" y1="170" x2="594" y2="630" />
+
+    <line x1="90" y1="216" x2="650" y2="216" />
+    <line x1="90" y1="262" x2="650" y2="262" />
+    <line x1="90" y1="308" x2="650" y2="308" />
+    <line x1="90" y1="354" x2="650" y2="354" />
+    <line x1="90" y1="400" x2="650" y2="400" />
+    <line x1="90" y1="446" x2="650" y2="446" />
+    <line x1="90" y1="492" x2="650" y2="492" />
+    <line x1="90" y1="538" x2="650" y2="538" />
+    <line x1="90" y1="584" x2="650" y2="584" />
+  </g>
+
+  <g font-family="Alegreya, serif" font-size="12" fill="#5b4128">
+    <text x="100" y="620">1</text>
+    <text x="620" y="620">10</text>
+    <text x="620" y="570">20</text>
+    <text x="100" y="570">11</text>
+    <text x="100" y="222">91</text>
+    <text x="620" y="222">100</text>
+  </g>
+
+  <g stroke="#1f6f5c" stroke-width="6" stroke-linecap="round">
+    <line x1="140" y1="560" x2="320" y2="370" />
+    <line x1="460" y1="520" x2="580" y2="330" />
+  </g>
+  <g stroke="#b9892c" stroke-width="3" stroke-linecap="round">
+    <line x1="152" y1="540" x2="308" y2="390" />
+    <line x1="176" y1="516" x2="282" y2="414" />
+    <line x1="200" y1="492" x2="258" y2="438" />
+  </g>
+
+  <g stroke="#b3502f" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M 560 240 C 520 330, 420 380, 340 470" />
+    <circle cx="560" cy="240" r="12" fill="#8c2f25" stroke="#4b1711" stroke-width="3" />
+  </g>
+
+  <circle cx="200" cy="610" r="10" fill="#1f5f8c" stroke="#fff6e0" stroke-width="2" />
+  <circle cx="225" cy="590" r="10" fill="#9d2f2f" stroke="#fff6e0" stroke-width="2" />
+
+  <rect x="720" y="170" width="420" height="490" rx="24" fill="#fff2d6" stroke="#8c6a3f" stroke-width="2" />
+  <text x="750" y="220" font-family="Prata, serif" font-size="26" fill="#1a120c">Play</text>
+  <rect x="750" y="240" width="120" height="120" rx="16" fill="#fff8e4" stroke="#5b4128" stroke-width="2" />
+  <text x="795" y="315" font-family="Alegreya, serif" font-size="40" fill="#24344d">4</text>
+
+  <rect x="750" y="380" width="220" height="44" rx="22" fill="#1f6f5c" />
+  <text x="780" y="409" font-family="Alegreya, serif" font-size="18" fill="#fff8e4">Roll the Cowrie</text>
+
+  <rect x="750" y="440" width="140" height="40" rx="20" fill="none" stroke="#5b4128" stroke-width="2" />
+  <text x="790" y="466" font-family="Alegreya, serif" font-size="16" fill="#5b4128">Restart</text>
+
+  <text x="750" y="520" font-family="Prata, serif" font-size="22" fill="#1a120c">Virtues &amp; Vices</text>
+  <text x="750" y="548" font-family="Alegreya, serif" font-size="14" fill="#5b4128">Daya 4 -> 14, Satya 20 -> 38</text>
+  <text x="750" y="570" font-family="Alegreya, serif" font-size="14" fill="#5b4128">Krodha 17 -> 7, Lobha 62 -> 18</text>
+</svg>
