@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaikuntapali - The Indian Snakes and Ladders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;700&family=Prata&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div>
+        <p class="kicker">Classic Indian Board Game</p>
+        <h1>Vaikuntapali</h1>
+        <p class="subtitle">
+          A moral journey of ascent and descent. Rise through virtues, fall through vices.
+        </p>
+      </div>
+      <div class="legend">
+        <div class="legend-item">
+          <span class="legend-dot virtue"></span>
+          <div>
+            <strong>Stairs (Ladders)</strong>
+            <span>Virtues lift the soul.</span>
+          </div>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot vice"></span>
+          <div>
+            <strong>Serpents (Snakes)</strong>
+            <span>Vices bring the fall.</span>
+          </div>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot goal"></span>
+          <div>
+            <strong>Vaikuntha</strong>
+            <span>Reach 100 to win.</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="board-panel">
+        <div class="board-frame">
+          <div class="board" id="board"></div>
+          <svg class="overlay" id="overlay" viewBox="0 0 1000 1000" preserveAspectRatio="none"></svg>
+          <div class="tokens">
+            <div class="token" id="token-0" aria-label="Player 1"></div>
+            <div class="token" id="token-1" aria-label="Player 2"></div>
+          </div>
+        </div>
+        <div class="board-caption">
+          The board is numbered in a winding path (1 to 100). Each stair and serpent carries a moral teaching.
+        </div>
+      </section>
+
+      <aside class="control-panel">
+        <div class="panel-section">
+          <h2>Play</h2>
+          <div class="turn-info" id="turn-info">Player 1 begins</div>
+          <div class="dice-area">
+            <div class="dice" id="dice">-</div>
+            <button class="primary" id="roll-btn">Roll the Cowrie</button>
+            <button class="ghost" id="reset-btn">Restart</button>
+          </div>
+          <div class="log" id="log"></div>
+        </div>
+
+        <div class="panel-section">
+          <h2>Virtues and Vices</h2>
+          <p class="panel-text">
+            Traditional Vaikuntapali pairs each rise or fall with a lesson. The version below uses classic Sanskrit
+            ideals in romanized form.
+          </p>
+          <div class="pair-list" id="pairs"></div>
+        </div>
+
+        <div class="panel-section">
+          <h2>Rules</h2>
+          <ul class="rules">
+            <li>Two players alternate turns.</li>
+            <li>Roll the cowrie (dice) and move forward.</li>
+            <li>Land at the base of a stair to rise. Land on a serpent head to fall.</li>
+            <li>You must roll the exact number to reach square 100.</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
