@@ -49,6 +49,7 @@
         <div class="board-frame">
           <div class="board" id="board"></div>
           <svg class="overlay" id="overlay" viewBox="0 0 1000 1000" preserveAspectRatio="none"></svg>
+          <div class="board-tooltip" id="board-tooltip" role="tooltip" aria-hidden="true"></div>
           <div class="tokens">
             <div class="token" id="token-0" aria-label="Player 1"></div>
             <div class="token" id="token-1" aria-label="Player 2"></div>
@@ -67,8 +68,39 @@
             <div class="dice" id="dice">-</div>
             <button class="primary" id="roll-btn">Roll the Cowrie</button>
             <button class="ghost" id="reset-btn">Restart</button>
+            <button class="ghost" id="learn-btn">Learn</button>
           </div>
           <div class="log" id="log"></div>
+        </div>
+
+        <div class="panel-section">
+          <h2>Board Style</h2>
+          <label class="select-label" for="board-style">Version</label>
+          <select id="board-style" class="select">
+            <option value="art-aligned">Art-aligned overlay</option>
+            <option value="art-only">Art only (no overlay)</option>
+            <option value="indian-gameplay" selected>Indian style (gameplay aligned)</option>
+            <option value="plain">Plain (no board art)</option>
+          </select>
+          <p class="panel-text small" id="board-style-note">
+            Uses a new Indian-style board art while keeping the current ladder and snake positions.
+          </p>
+        </div>
+
+        <div class="panel-section teaching-panel">
+          <h2>Teaching</h2>
+          <div class="teaching-card">
+            <div class="teaching-kicker" id="teaching-kicker">The Moral Ladder</div>
+            <h3 id="teaching-title">Each move is a lesson</h3>
+            <p class="teaching-text" id="teaching-text">
+              Vaikuntapali is a journey of virtue and vice. Ladders lift the soul, serpents humble it.
+              Reach 100 to ascend to Vaikuntha.
+            </p>
+            <p class="teaching-why" id="teaching-why">
+              Land on a stair to rise. Land on a serpent head to fall.
+            </p>
+            <p class="teaching-counter" id="teaching-counter"></p>
+          </div>
         </div>
 
         <div class="panel-section">
@@ -91,6 +123,47 @@
         </div>
       </aside>
     </main>
+  </div>
+
+  <div class="modal" id="onboarding-modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="onboarding-title">
+      <div class="modal-header">
+        <h2 id="onboarding-title">The Journey</h2>
+        <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-panel" data-panel="0">
+          <h3>The Journey</h3>
+          <p>
+            Vaikuntapali is more than a game. It is a pilgrimage across virtues and vices, where every rise and fall
+            reflects a moral truth. Reach square 100 to ascend to Vaikuntha.
+          </p>
+        </div>
+        <div class="modal-panel" data-panel="1">
+          <h3>Virtues &amp; Vices</h3>
+          <p>
+            Ladders are virtues that lift the soul. Serpents are vices that pull it down. Each encounter offers a
+            teaching for the path ahead.
+          </p>
+          <div class="modal-legend">
+            <span class="legend-dot virtue"></span> Virtues (Ladders)
+            <span class="legend-dot vice"></span> Vices (Serpents)
+          </div>
+        </div>
+        <div class="modal-panel" data-panel="2">
+          <h3>How to Play</h3>
+          <p>
+            Roll the cowrie, move forward, and heed the lessons. Land exactly on 100 to win. Take turns and let the
+            journey unfold.
+          </p>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="ghost" id="modal-prev">Back</button>
+        <button class="primary" id="modal-next">Next</button>
+        <button class="primary" id="modal-begin">Begin Journey</button>
+      </div>
+    </div>
   </div>
 
   <script src="app.js"></script>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f9f0d8" />
+      <stop offset="55%" stop-color="#edd9ad" />
+      <stop offset="100%" stop-color="#d8b982" />
+    </linearGradient>
+    <linearGradient id="border" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#c0712f" />
+      <stop offset="100%" stop-color="#8f4e22" />
+    </linearGradient>
+    <pattern id="motif" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="8" r="2" fill="#b3502f" opacity="0.35" />
+      <circle cx="22" cy="18" r="2" fill="#1f6f5c" opacity="0.3" />
+      <circle cx="34" cy="32" r="2" fill="#b9892c" opacity="0.25" />
+      <path d="M 20 8 L 26 16 L 14 16 Z" fill="#b3502f" opacity="0.25" />
+    </pattern>
+    <pattern id="edge" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 0 12 L 12 0 L 24 12 L 12 24 Z" fill="#b9892c" opacity="0.45" />
+      <circle cx="12" cy="12" r="3" fill="#7b3a1f" opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="1000" fill="url(#paper)" />
+  <rect x="50" y="50" width="900" height="900" rx="26" fill="none" stroke="url(#border)" stroke-width="10" />
+  <rect x="72" y="72" width="856" height="856" rx="18" fill="rgba(255, 248, 228, 0.45)" stroke="#8c5a2a" stroke-width="3" />
+  <rect x="92" y="92" width="816" height="816" rx="14" fill="url(#motif)" opacity="0.25" />
+
+  <rect x="92" y="92" width="816" height="32" fill="url(#edge)" opacity="0.7" />
+  <rect x="92" y="876" width="816" height="32" fill="url(#edge)" opacity="0.7" />
+  <rect x="92" y="124" width="32" height="752" fill="url(#edge)" opacity="0.7" />
+  <rect x="876" y="124" width="32" height="752" fill="url(#edge)" opacity="0.7" />
+
+  <g fill="#b3502f" opacity="0.55">
+    <circle cx="130" cy="130" r="12" />
+    <circle cx="870" cy="130" r="12" />
+    <circle cx="130" cy="870" r="12" />
+    <circle cx="870" cy="870" r="12" />
+  </g>
+
+  <g fill="#b9892c" opacity="0.8">
+    <path d="M 500 78 C 470 70, 450 94, 450 118 C 470 110, 490 116, 500 132 C 510 116, 530 110, 550 118 C 550 94, 530 70, 500 78 Z" />
+  </g>
+  <text x="500" y="115" font-family="Prata, serif" font-size="34" fill="#5b4128" text-anchor="middle">Vaikuntapali</text>
+</svg>
