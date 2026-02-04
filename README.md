@@ -7,7 +7,8 @@ A classic Indian Vaikuntapali (snakes and ladders) web game with a moral-journey
 - Virtues (ladders) and vices (snakes) with Sanskrit-inspired labels
 - Two-player turn system with exact-roll-to-100 rule
 - Animated token movement and activity log
-- Themed visuals and typography
+- Themed visuals, board art modes, and typography
+- Teaching layer with tooltips, a moral-lesson panel, and onboarding story
 
 ## Screenshots
 ![Vaikuntapali gameplay](screenshots/vaikuntapali-screenshot.svg)
@@ -23,15 +24,18 @@ A classic Indian Vaikuntapali (snakes and ladders) web game with a moral-journey
 4. Serve locally with Node (if already installed): run `npx serve` and follow the printed URL.
 
 ## Customization Notes
-1. Update ladders and snakes in `app.js` by editing the `ladders` and `snakes` arrays.
-2. Change the theme colors in `styles.css` under `:root`.
-3. Adjust player tokens in `styles.css` under `#token-0` and `#token-1`.
-4. Keep the board at 10x10 unless you also update `numberToCoord()` in `app.js` and the SVG overlay sizing.
+1. Update ladders and snakes in `app.js` by editing `laddersDefault` and `snakesDefault`.
+2. Adjust board styles in `app.js` under `boardModes` and in `styles.css` via the `--board-art-*` variables.
+3. Update teachings and counterparts in `app.js` under `teachingByName`.
+4. Change the theme colors in `styles.css` under `:root`.
+5. Adjust player tokens in `styles.css` under `#token-0` and `#token-1`.
+6. Keep the board at 10x10 unless you also update `numberToCoord()` in `app.js` and the SVG overlay sizing.
 
 ## Project Structure
 - `index.html` - App shell and layout
 - `styles.css` - Visual theme and layout styling
 - `app.js` - Game logic, rendering, and interactions
+- `assets/` - Board art assets
 - `project-report.md` - Summary of work and feature breakdowns
 
 ## Notes

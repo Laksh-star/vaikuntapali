@@ -18,6 +18,8 @@ Vaikuntapali is a traditional Indian board game known worldwide as Snakes and La
 ## Controls
 - **Roll the Cowrie**: Roll the die and move the current player.
 - **Restart**: Reset the game for a fresh start.
+- **Learn**: Reopen the onboarding story.
+- **Board Style**: Switch between board art modes.
 
 ## Installation Variants
 1. Open `index.html` directly from the filesystem.
@@ -30,6 +32,13 @@ Vaikuntapali is a traditional Indian board game known worldwide as Snakes and La
 - **Virtues** are shown in green and act as ladders.
 - **Vices** are shown in terracotta and act as snakes.
 - Square 100 is labeled **Vaikuntha**.
+- Hover or tap a virtue/vice square to see a tooltip with the teaching.
+- The **Teaching** panel updates when you land on a virtue or vice.
+
+## Teaching Layer
+- **Onboarding** appears on first visit to explain the journey.
+- **Tooltips** explain the virtue or vice at a glance.
+- **Teaching panel** expands on the moral lesson and why you moved.
 
 ## Tips
 - Watch the activity log to see turn-by-turn actions.
@@ -40,6 +49,7 @@ Vaikuntapali is a traditional Indian board game known worldwide as Snakes and La
 - If buttons do not respond, make sure your browser allows JavaScript.
 
 ## Customization Notes (For Hosts)
-1. Edit `app.js` to change ladders, snakes, or the moral labels.
+1. Edit `app.js` to change ladders, snakes, or the moral labels in `laddersDefault`, `snakesDefault`, and `teachingByName`.
 2. Tweak colors and typography in `styles.css` under `:root`.
-3. To add more players, duplicate a token element in `index.html` and extend the `players` array in `app.js`.
+3. Board art lives in `assets/`; update `--board-art-*` in `styles.css` to swap images.
+4. To add more players, duplicate a token element in `index.html` and extend the `players` array in `app.js`.
