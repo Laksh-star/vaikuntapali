@@ -79,6 +79,28 @@ Complete. No pending actions.
 - `::code-comment` review directives: **Not used**
 - `::archive` directives: **Not used**
 
+## Codex Feature Coverage (Session-Based)
+
+| Codex Feature Area | Example | Used? | Notes |
+|---|---|---|---|
+| Shell commands | `functions.shell_command` | Yes | File ops, git, image tooling, status checks. |
+| Patch edits | `functions.apply_patch` | Yes | Incremental updates to HTML/CSS/JS/docs. |
+| Image inspection | `functions.view_image` | Yes | Verified board art crop. |
+| Web browsing | `web.run` | No | Not required for this project. |
+| Structured prompts | `functions.request_user_input` | Yes | Collected UX direction (tone, surface, delight). |
+| MCP resources | MCP list/read | No | Not needed. |
+| Parallel tool calls | `multi_tool_use.parallel` | No | No parallel needs. |
+| Planning tool | `functions.update_plan` | No | Work was direct and iterative. |
+| Automations | `::automation-update` | No | No recurring tasks requested. |
+| Code review directives | `::code-comment` | No | Not a review task. |
+| Archiving directives | `::archive` | No | Conversation ongoing. |
+| Skills system | `skill-*` | No | No skill-triggering requests. |
+| Worktrees | `git worktree` | No | Single worktree used. |
+| Branching | `git checkout -b codex/*` | No | Stayed on existing `main`. |
+
+**Overall effectiveness estimate:** **~72%**  
+Rationale: most core Codex capabilities used (shell, patching, image inspection, structured prompts, git operations). Advanced/optional features like automations, skills, MCP resources, parallel tool calls, and worktrees were not applicable to this session.
+
 ## Capability-Based Map (As Provided)
 
 1. **File I/O and Workspace Editing** — Used  
