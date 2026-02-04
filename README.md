@@ -18,10 +18,12 @@ A classic Indian Vaikuntapali (snakes and ladders) web game with a moral-journey
 2. Click **Roll the Cowrie** to play.
 
 ## Installation Variants
-1. Open `index.html` directly from the filesystem.
-2. Serve locally with Python: run `python3 -m http.server 8080` and open `http://localhost:8080`.
+1. **Quick start (works for most people):** open `index.html` directly from the filesystem.
+2. **Most reliable (recommended):** serve locally with Python: run `python3 -m http.server 8080` and open `http://localhost:8080`.
 3. Serve locally with PHP: run `php -S localhost:8080` and open `http://localhost:8080`.
 4. Serve locally with Node (if already installed): run `npx serve` and follow the printed URL.
+
+Note: Some browsers apply extra restrictions to `file://` pages. If anything looks off (board art, localStorage, or interactions), use a local server.
 
 ## Customization Notes
 1. Update ladders and snakes in `app.js` by editing `laddersDefault` and `snakesDefault`.
